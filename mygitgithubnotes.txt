@@ -11,3 +11,7 @@ my understanding of git and github
 9. git log or, git log --oneline [ oneline for short, message only view ]
 10. git status [ check if everything is up-to-date with origin/master ]
 
+[ learn how .gitinnore works should you find int necessary ]
+
+11. 
+
