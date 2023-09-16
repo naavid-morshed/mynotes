@@ -7,6 +7,9 @@ my understanding of git and github
 5. git add . [ has to run each time when changes takes place, adds all files in directory for staging ]
 6. git commit [ will commit but takes you in ide/editor ]
 7. git commit -m 'adfdasfkjh' [ adding message straight from cli ]
+
+		[ git comming -a for skipping "git add" part ]
+
 8. git push or, git push -u origin master [ finally push after commiting/snapshotting ]
 9. git log or, git log --oneline [ oneline for short, message only view ]
 10. git status [ check if everything is up-to-date with origin/master ]
@@ -15,5 +18,6 @@ my understanding of git and github
 
 11. git status -s, or -v [ s for short, v for verbose ] 
 12. git diff [ to see what's changed but not yet staged ]
-13. git diff -staged [ use this after git add to check what's being staged ]
+13. git diff --staged, --cached [ use this after git add to check what's being staged ]
+
 
