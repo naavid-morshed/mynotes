@@ -1,0 +1,92 @@
+my understanding of vim commands (:help TOPIC for docs on TOPIC)
+
+% = cycles through parantheses and braces, press "a" if left, "i" if right
+i = inserts before, repeats
+a = inserts after, does not repeat
+o = insert after current line
+O = inserts before current line
+A = inserts at the end of line
+I = inserts at the beginning of line
+G = moves cursor at the end of file
+(number)G = move to line
+gg = moves cursor at the beginning of file
+x = delete character in insert mode, cursor has to be on character
+dd = deletes line
+u = undo
+dw = place cursor in front or word, then dw to delete word
+d$ = deletes line after cursor
+0 = move at the start of a line
+$ = move to end of line
+p = Type p to put previously deleted text after the cursor.
+P = Can also put the text before the cursor with P.
+r(character) = Type r(then character) to replace the character at the cursor with character.
+ce = deletes word after cursor then places in insert mode
+c$ = deletes entire line after cursor then puts into insert mode.
+/ = search mode, then press enter, then press "n" to iterate through results, "N" does it backwards.
+? = search mode, backwards.
+(When the search reaches the end of the file it will continue at the start, unless the 'wrapscan' option has been reset.)
+`' or `` or ''= last location of cursor, iterates on itself (update needed)
+ctrl+g = Type <C-g> to show your location in a file and the file status. Does not update real time.
+ctrl+o and ctrl+i = To go back to where you came from press <C-o>.
+    		    (keep <Ctrl> pressed down while pressing the letter o).
+    		    Repeat to go back further. <C-i> goes forward.
+ctrl+w = jump from one vim window to another
+:s/replaceThis/withThis/g = g means full line, without g, only works for first word
+:%s/replaceThis/withThis/g = entire file
+
+:!(terminal command) = self explanatory
+:w file.filetype = creates file
+R = replace multiple characters one after another
+combos
+y = yank
+p = paste
+(combine with visual mode)
+yw = yank one word
+
+combos ^^
+(press v) for visual mode, move cursor to select test then, :w test.txt [this will write selected text to test.txt]
+ 1. :!command executes an external command.
+	Some useful examples are:
+	:!ls                    - shows a directory listing
+	:!rm FILENAME           - removes file FILENAME
+ 2. :w FILENAME              writes the current Neovim file to disk with
+	name FILENAME.
+ 3. v  motion  :w FILENAME   saves the Visually selected lines in file
+	FILENAME.
+ 4. :r FILENAME              retrieves disk file FILENAME and puts it
+	below the cursor position.
+ 5. :r !dir                  reads the output of the dir command and
+	puts it below the cursor position.
+	
+
+settings ^^
+:set (settings) = set a setting temporarily or write in init.lua for permanent change [:set ic means ignore case]
+:set inv(settings) = reverse change
+
+command line completition ^^
+    Command line completion with <C-d> and <Tab>.
+	1. List the contents of the current directory: :!ls
+	2. Type the start of a command: :e
+	3. Press <C-d> and Neovim will show a list of commands beginning with "e".
+	4. Press <Tab> and Neovim will complete the command name to ":edit".
+	5. Now add a space and the start of an existing file name: :edit FIL
+	6. Press <Tab>. Neovim will complete the name ("FIL" -> "FILE", if it is unique).
+
+
+- Learn Vim Progressively:
+       http://yannesposito.com/Scratch/en/blog/Learn-Vim-Progressively/
+     - Learning Vim in 2013:
+       http://benmccormick.org/learning-vim-in-2014/
+     - Vimcasts:
+       http://vimcasts.org/
+     - Vim Video-Tutorials by Derek Wyatt:
+       http://derekwyatt.org/vim/tutorials/
+     - Learn Vimscript the Hard Way:
+       http://learnvimscriptthehardway.stevelosh.com/
+     - 7 Habits of Effective Text Editing:
+       http://www.moolenaar.net/habits.html
+     - vim-galore:
+     https://github.com/mhinz/vim-galore
+
+If you prefer a book, Practical Vim by Drew Neil is recommended often
+    (the sequel, Modern Vim, includes material specific to Neovim).
