@@ -1,0 +1,4 @@
+my understanding of git and github
+
+1. git config --list
+2. 
