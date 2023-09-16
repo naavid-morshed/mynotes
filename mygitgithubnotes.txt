@@ -13,5 +13,6 @@ my understanding of git and github
 
 [ learn how .gitinnore works should you find int necessary ]
 
-11. 
+11. git status -s, or -v [ s for short, v for verbose ] 
+12. git diff [ to see what's changed but not yet staged ]
 
