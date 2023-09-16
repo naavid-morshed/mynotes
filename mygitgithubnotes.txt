@@ -4,9 +4,10 @@ my understanding of git and github
 2. git config --global init.defaultBranch main [ changes from master to main ]
 3. gh repo create [ creates a repo on github ]
 4. git init [ initialized git ]
-5. git add . [ adds all files in directory for staging ]
+5. git add . [ has to run each time when changes takes place, adds all files in directory for staging ]
 6. git commit [ will commit but takes you in ide/editor ]
 7. git commit -m 'adfdasfkjh' [ adding message straight from cli ]
 8. git push or, git push -u origin master [ finally push after commiting/snapshotting ]
 9. git log or, git log --oneline [ oneline for short, message only view ]
 10. git status [ check if everything is up-to-date with origin/master ]
+
