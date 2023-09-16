@@ -7,5 +7,5 @@ my understanding of git and github
 5. git add . [ adds all files in directory for staging ]
 6. git commit [ will commit but takes you in ide/editor ]
 7. git commit -m 'adfdasfkjh' [ adding message straight from cli ]
-8. git push or, git push origin master [ finally push after commiting/snapshotting ]
+8. git push or, git push -u origin master [ finally push after commiting/snapshotting ]
 9. git log or, git log --oneline [ oneline for short, message only view ]
