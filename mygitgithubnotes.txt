@@ -15,4 +15,5 @@ my understanding of git and github
 
 11. git status -s, or -v [ s for short, v for verbose ] 
 12. git diff [ to see what's changed but not yet staged ]
+13. git diff -staged [ use this after git add to check what's being staged ]
 
