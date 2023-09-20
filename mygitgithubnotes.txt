@@ -8,10 +8,13 @@ my understanding of git and github ( * for importance )
 6. git commit [ will commit but takes you in ide/editor ] *
 7. git commit -m 'adfdasfkjh' [ adding message straight from cli ]
 
-		[ git comming -a for skipping "git add" part ]
+		[ git comming -a for skipping "git add" part ] *
 
 8. git push or, git push -u origin master [ finally push after commiting/snapshotting ] *
 9. git log or, git log --oneline [ oneline for short, message only view ] *
+
+		[ -p for patch, --stat, --shortstat, --graph, --pretty ]
+
 10. git status [ check if everything is up-to-date with origin/master ] *
 
 [ learn how .gitinnore works should you find int necessary ]
