@@ -12,9 +12,9 @@ my understanding of git and github ( * for importance )
 
 8. git push or, git push -u origin master [ finally push after commiting/snapshotting ] *
 9. git log or, git log --oneline [ oneline for short, message only view ] *
-
+		[ --since=2.weeks ]
 		[ -p for patch, --stat, --shortstat, --graph, --pretty ]
-
+		[ --grep works as well ]
 10. git status [ check if everything is up-to-date with origin/master ] *
 
 [ learn how .gitinnore works should you find int necessary ]
