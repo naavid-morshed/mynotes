@@ -20,3 +20,5 @@ my understanding of git and github ( * for importance )
 12. git diff [ to see what's changed but not yet staged ]
 13. git diff --staged, --cached [ use this after git add to check what's being staged ]
 14. git log -p -2 [ -p, --patch for differences in each commit, -2 means last two entries ]
+
+15. git branch [ -r flag for remote, -a for all, no flag for local only ] *
